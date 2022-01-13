@@ -2902,8 +2902,6 @@
 9	udu	udu	NOUN	_	_	_	_	_	_
 10	.	_	PUNCT	_	_	_	_	_	_
 
-
-
 # text = Anie owo efen ke obio emi adat ọkpọ asian onyuñ ọkwọhọ etiñe - ibuot ke
 1	Anie	anie	PRON	_	_	_	_	_	_
 2	owo	owo	NOUN	_	_	_	_	_	_
@@ -2953,7 +2951,6 @@
 6	ndisime	ndisime	ADV	_	_	_	_	_	_
 7	owo	owo	NOUN	_	_	_	_	_	_
 8	.	_	PUNCT	_	_	_	_	_	_
-
 
 # text = Mme ikọ emi ikekureke Abasi Ekpenyọñ ke inua ima , ke ini emi enye okopde nte owo
 1	Mme	mme	PRON	_	_	_	_	_	_
