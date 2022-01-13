@@ -2352,7 +2352,7 @@
 14	udi	udi	NOUN	_	_	_	_	_	_
 15	,	_	PUNCT	_	_	_	_	_	_
 16	edi	edi	VERB	_	_	_	_	_	_
-17	ndobo	ndobo NOUN	_	_	_	_	_	_
+17	ndobo	ndobo	NOUN	_	_	_	_	_	_
 
 # text = mmọ oro baba kiet iketiehe nte ndobo emi Ndugi , eyen eka eka esie ọkọkpọñde ọnọ enye .
 1	mmọ	mmọ	DET	_	_	_	_	_	_
@@ -2369,8 +2369,8 @@
 12	eka	eka	NOUN	_	_	_	_	_	_
 13	eka	eka	NOUN	_	_	_	_	_	_
 14	esie	esie	PRON	_	_	_	_	_	_
-15	ọkọkpọñde	VERB_	_	_	_	_	_	_
-16	ọnọ	no	VERB_	_	_	_	_	_
+15	ọkọkpọñde	_	VERB	_	_	_	_	_	_
+16	ọnọ	no	VERB	_	_	_	_	_	_
 17	enye	enye	PRON	_	_	_	_	_	_
 18	.	_	PUNCT	_	_	_	_	_	_
 
@@ -2446,7 +2446,7 @@
 
 # text = Ndibe odudu Abasi edi kpa ke Ndugi .
 1	Ndibe	dibe	ADJ	_	_	_	_	_	_
-2	odudu	odudu	ADJ	_	_	_	_	_	_	_
+2	odudu	odudu	ADJ	_	_	_	_	_	_
 3	Abasi	Abasi	PROPN	_	_	_	_	_	_
 4	edi	edi	VERB	_	_	_	_	_	_
 5	kpa	kpa	VERB	_	_	_	_	_	_
@@ -2588,7 +2588,7 @@
 3	Abasi	Abasi	PROPN	_	_	_	_	_	_
 4	,	_	PUNCT	_	_	_	_	_	_
 5	Ete	Ete	NOUN	_	_	_	_	_	_
-6	añwan	añwan	NOUN	_	_	_	_	_	_	_	_
+6	añwan	añwan	NOUN	_	_	_	_	_	_
 7	esie	esie	PRON	_	_	_	_	_	_
 8	ama	ama	VERB	_	_	_	_	_	_
 9	ọtọñọ	tọñọ	VERB	_	_	_	_	_	_
@@ -2646,8 +2646,8 @@
 2	ye	ye	CCONJ	_	_	_	_	_	_
 
 # text = uñwọñ ibuo , enye ama etre kaña ndisin .
-1	uñwọñ		uñwọñ		NOUN	_	_	_	_	_	_
-2	ibuo	ibuo	NOUN	_	_	_	_	_
+1	uñwọñ	uñwọñ	NOUN	_	_	_	_	_	_
+2	ibuo	ibuo	NOUN	_	_	_	_	_	_
 3	,	_	PUNCT	_	_	_	_	_	_
 4	enye	enye	PRON	_	_	_	_	_	_
 5	ama	ama	VERB	_	_	_	_	_	_
@@ -2684,7 +2684,7 @@
 4	Abasi	Abasi	PROPN	_	_	_	_	_	_
 5	Ekpenyọñ	_	PROPN	_	_	_	_	_	_
 6	ama	ama	VERB	_	_	_	_	_	_
-7	etibi	tibi	verb	_	_	_	_	_	_
+7	etibi	tibi	VERB	_	_	_	_	_	_
 8	eyet	eyet	NOUN	_	_	_	_	_	_
 9	atua	tua	VERB	_	_	_	_	_	_
 10	ete	ete	VERB	_	_	_	_	_	_
@@ -2692,7 +2692,7 @@
 12	‘	_	PUNCT	_	_	_	_	_	_
 13	Mkpa	mkpa	NOUN	_	_	_	_	_	_
 14	,	_	PUNCT	_	_	_	_	_	_
-15	sọsọñ	sọñ	ADJ	_	_	_	_	_	_	_
+15	sọsọñ	sọñ	ADJ	_	_	_	_	_	_
 16	o	O	PART	_	_	_	_	_	_
 17	!	_	PUNCT	_	_	_	_	_	_
 
@@ -2736,7 +2736,7 @@
 6	esio	sio	VERB	_	_	_	_	_	_
 7	eka	eka	VERB	_	_	_	_	_	_
 8	Abana	abana	PROPN	_	_	_	_	_	_
-9	iketim	tim	VERB	_	_	_	_	_	_	_
+9	iketim	tim	VERB	_	_	_	_	_	_
 10	ufọk	ufọk	NOUN	_	_	_	_	_	_
 11	.	_	PUNCT	_	_	_	_	_	_
 
@@ -2824,7 +2824,7 @@
 14	Ndugi	_	PROPN	_	_	_	_	_	_
 15	eyen	eyen	NOUN	_	_	_	_	_	_
 16	eka	eka	NOUN	_	_	_	_	_	_
-17	eka	eka	NOUN	_	_	_
+17	eka	eka	NOUN	_	_	_	_	_	_
 
 # text = Ikwọ ita oro ema ebuk mbuk obio ofuri ofuri enọ enye .
 1	Ikwọ	_	_	_	_	_	_	_	_
@@ -2986,7 +2986,7 @@
 9	.	_	PUNCT	_	_	_	_	_	_
 
 # text = Mbọm , ededọhọ ete “ ñkpọfiọk ekpere edem , ibehe iso
-1	Mbọm	Mbọm	NOUN	_	_	_	_	_	_	_
+1	Mbọm	Mbọm	NOUN	_	_	_	_	_	_
 2	,	_	PUNCT	_	_	_	_	_	_
 3	ededọhọ	dọhọ	VERB	_	_	_	_	_	_
 4	ete	ete	VERB	_	_	_	_	_	_
@@ -3003,7 +3003,7 @@
 2	.	_	PUNCT	_	_	_	_	_	_
 
 # text = Edieke ọkpọfiọkde ntem ke mbemiso , afo ukpesimke mi ke Abana . ’
-1	Edieke	edieke		CONJ_	_	_	_	_	_	_
+1	Edieke	edieke	CONJ	_	_	_	_	_	_
 2	ọkpọfiọkde	fink	VERB	_	_	_	_	_	_
 3	ntem	ntem	ADP	_	_	_	_	_	_
 4	ke	ke	ADP	_	_	_	_	_	_
