@@ -1,8 +1,8 @@
 
 from setuptools import setup
 setup(
-    name="efk",
+    name="efi",
     entry_points={
-        "spacy_languages": ["efk = efk:Efik"],
+        "spacy_languages": ["efi = efi:Efik"],
     }
 )

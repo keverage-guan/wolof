@@ -19,7 +19,7 @@ class EfikLemmatizer(Lemmatizer):
     ) -> None:
         super().__init__(vocab, model, name, mode=mode, overwrite=overwrite)
         
-        lookups_tables = spacy.registry.lookups.get(efk)()
+        lookups_tables = spacy.registry.lookups.get(efi)()
         if not nlp.vocab.lookups.has_table('lemma_lookup'):
             language_data = srsly.read_json(lookups_tables["lemma_lookup"])
             nlp.vocab.lookups.add_table("lemma_lookup", language_data)
