@@ -27,9 +27,9 @@ class EfikDefaults(Language.Defaults):
     tag_map = TAG_MAP
     writing_system = {"direction": "ltr", "has_case": True, "has_letters": True}
 
-@spacy.registry.languages("efk") #https://nightly.spacy.io/api/top-level#registry
+@spacy.registry.languages("efi") #https://nightly.spacy.io/api/top-level#registry
 class Efik(Language):
-    lang = "efk"
+    lang = "efi"
     Defaults = EfikDefaults
 
     #custom on init
@@ -46,7 +46,7 @@ def make_lemmatizer(
     return EfikLemmatizer(nlp.vocab, model, name, mode=mode, overwrite=overwrite)
 
 #Add locations of lookups data to the registry
-@spacy.registry.lookups("efk")
+@spacy.registry.lookups("efi")
 def do_registration():
     from pathlib import Path
     cadet_path = Path.cwd()

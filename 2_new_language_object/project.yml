@@ -5,12 +5,12 @@ description: "This project template lets you train a part-of-speech tagger, lemm
 # Variables can be referenced across the project.yml using ${vars.var_name}
 vars:
   base_config: "base_config"
-  lang: "efk"
+  lang: "efi"
   treebank: "efik"
-  train_name: "efk_set-ud-train"
-  dev_name: "efk_set-ud-dev"
-  test_name: "efk_set-ud-test"
-  package_name: "ud_efk_set"
+  train_name: "efi_set-ud-train"
+  dev_name: "efi_set-ud-dev"
+  test_name: "efi_set-ud-test"
+  package_name: "ud_efi_set"
   package_version: "0.0.0"
   gpu: -1
 
