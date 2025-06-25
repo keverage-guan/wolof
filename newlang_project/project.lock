@@ -1,0 +1,68 @@
+prepare:
+  cmd: python -m weasel run prepare
+  script:
+    - python -m spacy convert corpus/conllu/train.conllu corpus/converted --converter
+      conllu --n-sents 0 --lang xx
+    - python -m spacy convert corpus/conllu/dev.conllu corpus/converted --converter
+      conllu --n-sents 0 --lang xx
+    - python -m spacy convert corpus/conllu/test.conllu corpus/converted --converter
+      conllu --n-sents 0 --lang xx
+  deps: []
+  outs:
+    - path: corpus/converted/train.spacy
+      md5: 19149a7cbc49df27e9b2842fbc196650
+    - path: corpus/converted/dev.spacy
+      md5: 6e77022836dad6b5c75682d23e3a0a61
+    - path: corpus/converted/test.spacy
+      md5: b6192c1f5d3e70adf68328e0afe61a66
+debug:
+  cmd: python -m weasel run debug
+  script:
+    - python -m spacy debug data configs/config.cfg
+  deps: []
+  outs: []
+train:
+  cmd: python -m weasel run train
+  script:
+    - python -m spacy train configs/config.cfg --output training/wolof --gpu-id -1
+      --nlp.lang=xx
+  deps:
+    - path: corpus/converted/train.spacy
+      md5: 19149a7cbc49df27e9b2842fbc196650
+    - path: corpus/converted/dev.spacy
+      md5: 6e77022836dad6b5c75682d23e3a0a61
+    - path: configs/config.cfg
+      md5: 28ed0c4d554051f43f84f26cf49fde30
+  outs:
+    - path: training/wolof/model-best
+      md5: b261bda5d9fbf3f4329f261bb97e21a9
+evaluate:
+  cmd: python -m weasel run evaluate
+  script:
+    - python -m spacy evaluate ./training/wolof/model-best ./corpus/converted/test.spacy
+      --output ./metrics/wolof.json --gpu-id -1
+  deps:
+    - path: training/wolof/model-best
+      md5: b261bda5d9fbf3f4329f261bb97e21a9
+    - path: corpus/converted/test.spacy
+      md5: b6192c1f5d3e70adf68328e0afe61a66
+  outs:
+    - path: metrics/wolof.json
+      md5: 38fcfb87b451cecd2752911b7533df24
+package:
+  cmd: python -m weasel run package
+  script:
+    - python -m spacy package training/wolof/model-best packages --name wolof_model
+      --version 0.0.0 --force
+  deps:
+    - path: training/wolof/model-best
+      md5: b261bda5d9fbf3f4329f261bb97e21a9
+  outs:
+    - path: packages/wol_wolof_model-0.0.0/dist/en_wolof_model-0.0.0.tar.gz
+      md5: null
+document:
+  cmd: python -m weasel run document
+  script:
+    - python -m spacy project document --output README.md
+  deps: []
+  outs: []

@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: xx-wolof-model
+Version: 0.0.0
+Home-page: 
+Author: 
+Author-email: 
+
+| Feature | Description |
+| --- | --- |
+| **Name** | `xx_wolof_model` |
+| **Version** | `0.0.0` |
+| **spaCy** | `>=3.8.7,<3.9.0` |
+| **Default Pipeline** | `tok2vec`, `parser` |
+| **Components** | `tok2vec`, `parser` |
+| **Vectors** | 0 keys, 0 unique vectors (0 dimensions) |
+| **Sources** | n/a |
+| **License** | n/a |
+| **Author** | [n/a]() |
+
+### Label Scheme
+
+<details>
+
+<summary>View label scheme (18 labels for 1 components)</summary>
+
+| Component | Labels |
+| --- | --- |
+| **`parser`** | `ROOT`, `cc`, `comp:aux`, `comp:obj`, `comp:obl`, `comp:pred`, `compound`, `conj`, `conj:appos`, `dep`, `det`, `dislocated`, `flat`, `mod`, `parataxis`, `punct`, `subj`, `udep` |
+
+</details>
+
+### Accuracy
+
+| Type | Score |
+| --- | --- |
+| `DEP_UAS` | 75.59 |
+| `DEP_LAS` | 66.63 |
+| `SENTS_P` | 85.23 |
+| `SENTS_R` | 91.37 |
+| `SENTS_F` | 88.19 |
+| `TOK2VEC_LOSS` | 914120.42 |
+| `PARSER_LOSS` | 193793.49 |
